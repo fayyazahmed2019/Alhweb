@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Haram Jewellers! Welcome</title>
+
+   
+
+    <!-- custom css file link  -->
+    <!-- <link rel="stylesheet" href="./stylehome.css"> -->
+
+     <link rel="stylesheet" href="./dashboard.css">
+       
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js">
+    </script>
+
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js">
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js">
+</script>
+
+
+</head>
+<body onload="checksignin(); getUserData();">
+    
+    <div class="header">
+
+        <!-- <a href="./index.html"><img src="./images/logo.png" alt="alharam" width="80px"></a> -->
+    
+        <div id="inner" class="email"></div>
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./">Downloads</a>
+            <a href="./">Inquiry</a>
+            <a class="active" onclick="logout();">Logout</a>
+            
+        </nav>
+    
+    
+    </div>
+
+
+    <div class="homeheading">
+        <h1>Inquiries</h1>
+      </div>
+      
+      <div class="home" id="listBox">
+          
+          </div>
+      
+
+<div class="credit"> Copyright @ 2022 by Al-Haram Jewellers | Developed By: Fayyaz Ahmed </div>
+
+<script src="./contactData.js"></script>
+
+</body>
+</html>
